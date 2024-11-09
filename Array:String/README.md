@@ -108,3 +108,13 @@ this is not optimal and has time complexity O(n) so I made a better solution:
 	3. 2 != nums[0] (which is 1), so now nums = [1,2,2] & k = 1
    since only first two elements matter, this is correct and since k represents the index of the last unique element, we need to increase it by 1 to have it be the number of unique elements. 
 
+
+
+
+RemoveElement.java
+
+	we are really only interested to do smth with numbers that are NOT val, namely to put them at the front of the array.
+	we create an int and set it to 0. suppose we have a case where nums = [3,2,2,3] and val = 3
+	first, 3 = 3. nothing happens. k remains 0.
+	next, 2 != 3. lets add 2 into nums at index k and increment it. next, 2 is again not equal 3. add 2 to nums at index k, nums[1]. also increment k. k is now 2. since 3 = 3 for the last element of nums, do nothing.
+
