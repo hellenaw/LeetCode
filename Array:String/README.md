@@ -90,3 +90,21 @@ Example of execution
     after running the above loop until last_num_nums1 = -1 (it stops), we get [4,5,6,4,5,6], but we need [1,2,3,4,5,6]
     else block never executes in this case and last_num_nums2 never decrements, meaning there are still elements in nums2 
     left to be copied into nums1
+
+
+
+RemoveDuplicates.java
+
+I made an empty list, if the element is not already inlist add it. length of list is k, iterated thru nums and set all indexes from 0 to length of k as the numbers from list and after the last element from list is copied into nums, set the rest to 0
+
+this is not optimal and has time complexity O(n) so I made a better solution:
+	make a counter k that doubles as index
+	go thru all elements inside nums.
+	if element is not equals to nums[k], set nums[k] as that element
+	then increment k, only if the if condition is true.
+	in case where we have [1,1,2]:
+	1. 1 = nums[0] (which is 1), so we do nothing
+	2. 1 = nums[0] (which is 1), so we do nothing
+	3. 2 != nums[0] (which is 1), so now nums = [1,2,2] & k = 1
+   since only first two elements matter, this is correct and since k represents the index of the last unique element, we need to increase it by 1 to have it be the number of unique elements. 
+
