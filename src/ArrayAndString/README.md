@@ -268,3 +268,34 @@ Output: 2
 
 	  since majority element is guaranteed, we don't need to verify. In the verification we just count the candidate appearances and check it's greater than len of array /2. 
 
+
+BestTimeToBuyAndSellStock.java
+
+
+ou are given an array prices where prices[i] is the price of a given stock on the ith day.
+
+You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+
+Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+ 
+
+Example 1:
+
+Input: prices = [7,1,5,3,6,4]
+Output: 5
+Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+Example 2:
+
+Input: prices = [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transactions are done and the max profit = 0.
+
+
+	First solution:
+
+	In the first solution I attempted, I initialized profit to 0. then i started looping through the array, from start to the element before last. take for example array [1,2,4]. The code takes element at index 0 (1), and compares it to element at 0+1 (being 2). the difference betweeen 1 and 2 is -1. this means second number is larger than first and the result is negative, meaning we have profit. if the day at which we bought stock were 2, and the next day 1, we dont have profit and the result is positive (1). Basically, I am searching for the smallest number for profit, signifying the greatest absolute difference between buy day and sell day. Since now the difference between 1 and 2 is negative, it is less than our initial profit which was initialized to be 0. so we replace it and set new profit to be -1. in the next iteration we compare 1 to 4. the difference is -3, which is less than our profit which was sset to be -1, so we overwrite it. profit is now -3. then the  outer for loop jumps to the next index, and we are comparing 2 to next index which holds 4. 2-4 is -2, but this is not less than our current profit which is -3 from the last iteration. this means the maximum profit we can obtain from this sequence of numbers is if we buy stock on the first day (index 0, value 1) and sell on the 3rd day (index 2, value 4) as the absolute difference between those two days is the greatest. We then simply return the absolute value of the profit, which is 3.
+	If the array were sorted, meaning stock value drops after each day, such as for [4,2,1], 4-1 is 3, not greater than 0 so nothing happens to profit and it remains 0. 2-1 is 1, again profit doesn't change. in the nxt iteration of outside loop, 2-1 is 1, again greater than 0 and profit stays at 0. This means that for such arrays we will simply return 0 like the problem asks.
+
+	PROBLEM: nested for loops have time complexity O(n) in this case, which is bad but also means LeetCode won't accept it. I had to think of something better.
