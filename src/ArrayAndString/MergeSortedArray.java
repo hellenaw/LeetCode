@@ -1,6 +1,3 @@
-//*****************  MERGE SORTED ARRAY  ********************
-
-import java.util.Arrays;
 
 class MergeSortedArray{
 
@@ -77,6 +74,7 @@ public static void main(String[] args) {
 
 
     merge(nums1, m, nums2, n);
+    System.out.println(java.util.Arrays.toString(nums1));
 
 }
 
