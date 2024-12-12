@@ -30,10 +30,10 @@ Feel free to take a look at the code and my problem solving skills.
 - **`bin/`**  
   Contains compiled `.class` files. This folder is excluded from the repository via `.gitignore`.
 
-- **`Folder-Specific READMEs/`**  
+- **`Folder-Specific READMEs`**  
   Each category folder has a `README.md` file explaining the solutions and approaches used for problems in that category.
 
-- **`Big-O Cheatsheet/`**
+- **`Big-O Cheatsheet`**
   A PDF cheatsheet summarizing Big-O complexities is included in the src/ directory to reference common algorithmic complexities.
 
 ---
