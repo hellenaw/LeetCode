@@ -1,10 +1,18 @@
 # LeetCode Solutions Repository
 
-Hi!! welcome to my LeetCode solutions repository!
+Hi!! 👋
+Welcome to my LeetCode solutions repository!
+
 This project contains my solutions to LeetCode problems, specifically, the "Top Interview 150" problem set. 
+
 It's organized into categories like on LeetCode for better navigation and understanding. 
-I created this to expand my knowledge beyond classes and schoolwork, to help me track my progress, and prepare for future interviews at the same time.
-Feel free to take a look at the code and gain insight into my problem solving skills.
+
+I created this repository to:
+	•	Expand my knowledge beyond classes and schoolwork 📚
+	•	Track my problem-solving progress 📍
+	•	Prepare for future interviews 👩‍💻
+
+Feel free to take a look at the code and my problem solving skills.
 
 ---
 
@@ -22,6 +30,9 @@ Feel free to take a look at the code and gain insight into my problem solving sk
 - **Folder-Specific READMEs**  
   Each category folder has a `README.md` file explaining the solutions and approaches used for problems in that category.
 
+- **Big-O Cheatsheet**
+  A PDF cheatsheet summarizing Big-O complexities is included in the src/ directory to reference common algorithmic complexities.
+
 ---
 
 ## **How to Use**
@@ -30,3 +41,6 @@ Feel free to take a look at the code and gain insight into my problem solving sk
    ```bash
    git clone https://github.com/YourUsername/LeetCode-Solutions.git
    cd LeetCode-Solutions
+
+2. Check out the code inside the different folders arranged by categories within **`src/`**
+   ,and the solution explanations as well as my process inside the `README.md` file within each folder.
