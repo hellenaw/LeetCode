@@ -3,13 +3,16 @@
 Hi!! 👋
 Welcome to my LeetCode solutions repository!
 
-This project contains my solutions to LeetCode problems, specifically, the "Top Interview 150" problem set. 
+This project contains my solutions to the "Top Interview 150" problem set. 
 
-It's organized into categories like on LeetCode for better navigation and understanding. 
+It's organized into categories like on LeetCode for better navigation. 
 
 I created this repository to:
+
 	•	Expand my knowledge beyond classes and schoolwork 📚
+
 	•	Track my problem-solving progress 📍
+
 	•	Prepare for future interviews 👩‍💻
 
 Feel free to take a look at the code and my problem solving skills.
@@ -27,10 +30,10 @@ Feel free to take a look at the code and my problem solving skills.
 - **`bin/`**  
   Contains compiled `.class` files. This folder is excluded from the repository via `.gitignore`.
 
-- **Folder-Specific READMEs**  
+- **`Folder-Specific READMEs/`**  
   Each category folder has a `README.md` file explaining the solutions and approaches used for problems in that category.
 
-- **Big-O Cheatsheet**
+- **`Big-O Cheatsheet/`**
   A PDF cheatsheet summarizing Big-O complexities is included in the src/ directory to reference common algorithmic complexities.
 
 ---
