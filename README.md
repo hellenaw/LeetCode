@@ -43,7 +43,6 @@ Feel free to take a look at the code and my problem solving skills.
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/YourUsername/LeetCode-Solutions.git
-   cd LeetCode-Solutions
 
 2. Check out the code inside the different folders arranged by categories within **`src/`**
    ,and the solution explanations as well as my process inside the `README.md` file within each folder.
